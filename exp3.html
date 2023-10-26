@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+		/*	
+			class Employee
+			{
+				constructor(id, name, cmp)
+				{
+					this.id = id;
+					this.name = name;
+					this.cmp = cmp;
+				}
+
+				empDetails()
+				{
+					document.write("ID : "+this.id+" Name : "+this.name+" Company : "+this.cmp+"<br>");
+				}
+			}
+
+			var emp1 = new Employee(101, "Shivam", "Dell");
+			emp1.empDetails();
+
+			var emp2 = new Employee(102, "Rohit", "ICC");
+			emp2.empDetails();
+	
+
+			emp = {id:101, name:"Rohit", cmp:"BCCI"};
+
+			document.write(emp.id+" "+emp.name+" "+emp.cmp);
+	
+
+			var emp = new Object();
+
+			emp.id = 101;
+			emp.name = "King";
+			emp.cmp = "ICC";
+
+			document.write(emp.id+" "+emp.name+" "+emp.cmp);
+
+			
+
+			function Employee(fname, lname) {
+				
+				this.fname = fname;
+				this.lname = lname;
+			}
+
+			Employee.prototype.fullName = function() {
+				return this.fname+" "+this.lname;
+			};
+
+			var emp1 = new Employee("Shivam", "Gupta");
+			var emp2 = new Employee("Rohit", "Sharma");
+
+			document.write(emp1.fullName()+"<br>");
+			document.write(emp2.fullName());
+
+			*/
+
+			function Product(name, price) {
+				this.name = name;
+				this.price = price;
+			}
+
+			Product.prototype.prDetails = function()
+			{
+				return this.name+" "+this.price;
+			}
+
+			var pr1 = new Product("Dell", 234);
+			var pr2 = new Product("Sony", 345);
+
+			document.write(pr1.prDetails()+"<br>");
+			document.write(pr2.prDetails());
+
+		</script>
+</body>
+</html>
